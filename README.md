@@ -1,4 +1,3 @@
-<img width="794" height="262" alt="lime_explanation_false_negative" src="https://github.com/user-attachments/assets/07d53872-5421-48e2-b187-df641b79d475" />
 # Bank Marketing Prediction Model
 A supervised learning machine learning project which predicts whether a client will respond to a marketing campaign for a bank and subscribe to a term deposit.
 
