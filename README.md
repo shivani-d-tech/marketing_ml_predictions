@@ -1,3 +1,4 @@
+<img width="794" height="262" alt="lime_explanation_false_negative" src="https://github.com/user-attachments/assets/07d53872-5421-48e2-b187-df641b79d475" />
 # Bank Marketing Prediction Model
 A supervised learning machine learning project which predicts whether a client will respond to a marketing campaign for a bank and subscribe to a term deposit.
 
@@ -170,7 +171,7 @@ Techniques used:
 **LIME - False Negative case:**
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2286b850-9fe5-4156-b0c4-f846dbcc66a9" width="800" />
+  <img src="https://github.com/user-attachments/assets/df27c20d-5ae6-407c-9688-0ff6c2773360" width="800" />
 
 * The model is 99% confident in its decision. This suggests that the model is highly over-confident.
 * There are big contributions from features, such as cat_month_aug, that push for a positive prediction. However, the model seems to begin with a very strong internal bias towards class 0 for this customer, and the positive contributions are not large enough to overcome this.
