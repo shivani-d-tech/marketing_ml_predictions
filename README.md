@@ -148,8 +148,6 @@ Find the final model notebook [here](./1_notebooks/06_final_model.ipynb).
 Techniques used:
 * Feature Importance
 * LIME
-  
-Example:
 
 **Feature Importance:**
 
