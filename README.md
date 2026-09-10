@@ -145,6 +145,44 @@ Find the final model notebook [here](./1_notebooks/06_final_model.ipynb).
 
 ## Explainability
 
+Techniques used:
+* Feature Importance
+* LIME
+  
+Example:
+
+**Feature Importance:**
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/81f1c533-4cb4-46cc-afc8-945f9c16c8a5" width="800" />
+
+* The model focuses primarily on balance_log, age, and poutcome_success. This suggests that financial stability, demographic factors, and past campaign outcomes are the driving power behind predictions.
+* Contact_type, previous_log, and month_may also matter, suggesting that communication strategy and timing influence the model’s decisions more than job or marital status.
+
+
+
+**LIME - correctly predicted case:**
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2286b850-9fe5-4156-b0c4-f846dbcc66a9" width="800" />
+
+* The model shows a 65% confidence in its positive prediction.
+* Features, such as the last contact month of July and days since contact, are main drivers in swaying the prediction of the model.
+
+**LIME - False Negative case:**
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2286b850-9fe5-4156-b0c4-f846dbcc66a9" width="800" />
+
+* The model is 99% confident in its decision. This suggests that the model is highly over-confident.
+* There are big contributions from features, such as cat_month_aug, that push for a positive prediction. However, the model seems to begin with a very strong internal bias towards class 0 for this customer, and the positive contributions are not large enough to overcome this.
+
+## 💼 Future Work
+
+* Try other class imbalance techniques. Although this project uses SMOTE, techniques, such as random undertraining, might improve evaluation metrics.
+* Calibrate the model confidence – The model shows overconfidence and this could be improved through calibration curves and adjusting the decision threshold.
+* Feature engineering – create features to create stronger signals.
+* Try more advanced models (e.g. LightGBM) to improve evaluation metrics.
 
 
 
