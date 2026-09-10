@@ -36,7 +36,7 @@ marketing_ml_project_3/
 * *Number of features:* 17
 * *Target variable:* If the client subscribed to term deposit ('y')
 
-To view the data understanding notebook, click [here](./1_notebooks/01_data_inspection.ipynb)
+To view the data understanding notebook, click [here](./1_notebooks/01_data_inspection.ipynb).
 
 **Key Features:**
 
@@ -83,6 +83,8 @@ To view the data understanding notebook, click [here](./1_notebooks/01_data_insp
   <img src="https://github.com/user-attachments/assets/bbd93c79-6beb-4761-9dbe-a1769074890b" width="400" />
 </p>
 
+Find the full EDA notebook [here](./1_notebooks/2_eda/ipynb).
+
 ## ⚙️ Data Preprocessing and Feature Engineering
 
 **Data Cleaning Steps:**
@@ -107,9 +109,9 @@ Columns added:
 
 * *StandardScaler()* = As columns are normally distributed or log-transformed, ready for scaling.
 * *OneHotEncoder()* = To transform categorical data into binary columns, that is digestible by the models.
-* *SMOTE()* = Used for class imbalance and prevent model bias.
+* *SMOTE()* = Used for class imbalance and prevention of model bias.
 
-Find the preprocessing notebook [here](./1_notebooks/03_preprocessing.ipynb)
+Find the preprocessing notebook [here](./1_notebooks/03_preprocessing.ipynb).
 
 ## 🤖 Models Implemented
 
@@ -118,6 +120,34 @@ Find the preprocessing notebook [here](./1_notebooks/03_preprocessing.ipynb)
 | Logistic Regression | Baseline | No |
 | Random Forest Model | Advanced | Yes |
 | XGBoost | Advanced | Yes |
+
+## 📈 Model Comparison and Selection
+
+| Model | Precision (yes) | Recall (yes) | F1 (yes) | Accuracy |
+|-------|-----------------|--------------|----------|----------|
+| Logistic Regression | 0.28 | 0.62 | 0.39 | 0.76 |
+| Random Forest | 0.46 | 0.43 | 0.45 | 0.87 |
+| XGBoost | 0.70 | 0.20 | 0.31 | 0.89 |
+
+**Model Selection: *Logistic Regression***
+
+* Has the best overall balance when predicting the “yes” class.
+* Whilst logistic regression and XGBoost excel in one evaluation metric each, neither has the balance needed for effective targeting.
+* The Random Forest Model is an example of a balanced trade-off – precision, recall, and F1 are all important to goal, therefore need a model that performs consistently across all metrics.
+* Although precision, recall, and F1-score is below 0.55 for the “yes” class – this is expected for severely imbalanced classification problems.
+* Random Forest is the model that is the most dependable for identifying likely responders and supporting targeted marketing decisions.
+
+Find the baseline model notebook [here](./1_notebooks/04_baseline_models_logistic.ipynb).
+
+Find the advanced models and their comparison [here](./1_notebooks/05_advanced_models.ipynb).
+
+Find the final model notebook [here](./1_notebooks/06_final_model.ipynb).
+
+## Explainability
+
+
+
+
 
 
 
