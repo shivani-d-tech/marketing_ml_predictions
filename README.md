@@ -7,7 +7,7 @@ This goal of this project predicts whether a customer will respond to a bank's m
 ## 📂 Repository Structure
 
 ```
-marketing_ml_project_3/
+marketing_ml_predictions/
 ├── 1_notebooks/
 │ ├── 01_data_inspection.ipynb
 │ └── 02_eda.ipynb
